@@ -1,0 +1,64 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>js文字滚动插件制作新闻公告列表scroll文字自动滚动_特效网</title>
+<meta name="description" content="js文字滚动插件制作scroll文字自动滚动，设置新闻公告列表文字向上间歇滚动与文字向下间歇滚动。" />
+</head>
+
+<body>
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;vertical-align:middle;}
+.notice{width:387px;margin:20px auto;height:26px;overflow:hidden;}
+.noticTipTxt{color:#ff7300;height:22px;line-height:22px;overflow:hidden;margin:0 0 0 40px;}
+.noticTipTxt li{height:22px;line-height:22px;}
+.noticTipTxt a{color:#0075E8;font-size:12px;text-decoration:none;}
+.noticTipTxt a:hover{color:#ff7300;text-decoration:underline;}
+</style>
+
+<div class="notice">
+	<ul id="texiao01" class="noticTipTxt">
+		<li><a href="http://www.zhaotexiao.com/" target="_blank">js无缝滚动制作js文字无缝滚动和js图片无缝滚动 <img src="images/hot001.gif" width="22" height="11" /></a></li>
+		<li><a href="http://www.zhaotexiao.com/" target="_blank">js文字切换特效制作焦点文字带滤镜切换效果</a></li>
+		<li><a href="http://www.zhaotexiao.com/" target="_blank">js文字特效制作js文字闪烁与文字变色效果</a></li>
+		<li><a href="http://www.zhaotexiao.com/" target="_blank">js文字滚动制作js scroll单排文字滚动向上间隔滚动</a></li>
+	</ul>
+</div>
+
+<div class="notice">
+	<ul id="texiao02" class="noticTipTxt">
+		<li><a href="http://www.zhaotexiao.com/" target="_blank">js文字滚动制作js scroll单排文字滚动向上间隔滚动</a></li>
+		<li><a href="http://www.zhaotexiao.com/" target="_blank">js文字特效制作js文字闪烁与文字变色效果</a></li>
+		<li><a href="http://www.zhaotexiao.com/" target="_blank">js文字切换特效制作焦点文字带滤镜切换效果</a></li>
+		<li><a href="http://www.zhaotexiao.com/" target="_blank">js无缝滚动制作js文字无缝滚动和js图片无缝滚动 <img src="images/hot001.gif" width="22" height="11" /></a></li>
+	</ul>
+</div>
+
+<script type="text/javascript" src="scrolltext.js"></script>
+<script type="text/javascript">
+	//var scrollup=new ScrollText('texiao01');
+// 演示一
+if(document.getElementById("texiao02")){
+	var scrollup = new ScrollText("texiao02");
+	scrollup.LineHeight = 22;        //单排文字滚动的高度
+	scrollup.Amount = 1;            //注意:子模块(LineHeight)一定要能整除Amount.
+	scrollup.Delay = 20;           //延时
+	scrollup.Start();             //文字自动滚动
+	scrollup.Direction = "up"; //文字向下滚动
+}
+// // 演示二
+// if(document.getElementById("texiao02")){
+// 	var scrollup = new ScrollText("texiao02");
+// 	scrollup.LineHeight = 22;        //单排文字滚动的高度
+// 	scrollup.Amount = 1;            //注意:子模块(LineHeight)一定要能整除Amount.
+// 	scrollup.Delay = 20;           //延时
+// 	scrollup.Start();             //文字自动滚动
+// 	scrollup.Direction = "up";   //默认设置为文字向上滚动
+// }
+</script> 
+
+</body>
+</html>
